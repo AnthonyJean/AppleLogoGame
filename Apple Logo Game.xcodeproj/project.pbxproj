@@ -12,6 +12,15 @@
 		92A69F56220085840058CC33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F54220085840058CC33 /* Main.storyboard */; };
 		92A69F58220085860058CC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F57220085860058CC33 /* Assets.xcassets */; };
 		92A69F5B220085860058CC33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F59220085860058CC33 /* LaunchScreen.storyboard */; };
+		92A69F66220091E60058CC33 /* tictac.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F63220091E50058CC33 /* tictac.mp3 */; };
+		92A69F67220091E60058CC33 /* non.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F64220091E50058CC33 /* non.mp3 */; };
+		92A69F68220091E60058CC33 /* oui.wav in Resources */ = {isa = PBXBuildFile; fileRef = 92A69F65220091E50058CC33 /* oui.wav */; };
+		92A69F6A220092180058CC33 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F69220092180058CC33 /* MyView.swift */; };
+		92A69F6C22009CCD0058CC33 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F6B22009CCD0058CC33 /* MyButton.swift */; };
+		92A69F6E22009D4D0058CC33 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F6D22009D4D0058CC33 /* ExtensionView.swift */; };
+		92A69F702200A66B0058CC33 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F6F2200A66B0058CC33 /* Response.swift */; };
+		92A69F722200A9AF0058CC33 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F712200A9AF0058CC33 /* Logo.swift */; };
+		92A69F742200ACCA0058CC33 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A69F732200ACCA0058CC33 /* MyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		92A69F57220085860058CC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A69F5A220085860058CC33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A69F5C220085860058CC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A69F63220091E50058CC33 /* tictac.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tictac.mp3; sourceTree = "<group>"; };
+		92A69F64220091E50058CC33 /* non.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = non.mp3; sourceTree = "<group>"; };
+		92A69F65220091E50058CC33 /* oui.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oui.wav; sourceTree = "<group>"; };
+		92A69F69220092180058CC33 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		92A69F6B22009CCD0058CC33 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		92A69F6D22009D4D0058CC33 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		92A69F6F2200A66B0058CC33 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		92A69F712200A9AF0058CC33 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		92A69F732200ACCA0058CC33 /* MyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,31 @@
 		92A69F4F220085840058CC33 /* Apple Logo Game */ = {
 			isa = PBXGroup;
 			children = (
+				92A69F62220091E50058CC33 /* sons */,
 				92A69F50220085840058CC33 /* AppDelegate.swift */,
 				92A69F52220085840058CC33 /* ViewController.swift */,
 				92A69F54220085840058CC33 /* Main.storyboard */,
 				92A69F57220085860058CC33 /* Assets.xcassets */,
 				92A69F59220085860058CC33 /* LaunchScreen.storyboard */,
 				92A69F5C220085860058CC33 /* Info.plist */,
+				92A69F69220092180058CC33 /* MyView.swift */,
+				92A69F6B22009CCD0058CC33 /* MyButton.swift */,
+				92A69F6D22009D4D0058CC33 /* ExtensionView.swift */,
+				92A69F6F2200A66B0058CC33 /* Response.swift */,
+				92A69F712200A9AF0058CC33 /* Logo.swift */,
+				92A69F732200ACCA0058CC33 /* MyLabel.swift */,
 			);
 			path = "Apple Logo Game";
+			sourceTree = "<group>";
+		};
+		92A69F62220091E50058CC33 /* sons */ = {
+			isa = PBXGroup;
+			children = (
+				92A69F63220091E50058CC33 /* tictac.mp3 */,
+				92A69F64220091E50058CC33 /* non.mp3 */,
+				92A69F65220091E50058CC33 /* oui.wav */,
+			);
+			path = sons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A69F68220091E60058CC33 /* oui.wav in Resources */,
+				92A69F66220091E60058CC33 /* tictac.mp3 in Resources */,
 				92A69F5B220085860058CC33 /* LaunchScreen.storyboard in Resources */,
 				92A69F58220085860058CC33 /* Assets.xcassets in Resources */,
 				92A69F56220085840058CC33 /* Main.storyboard in Resources */,
+				92A69F67220091E60058CC33 /* non.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A69F702200A66B0058CC33 /* Response.swift in Sources */,
+				92A69F722200A9AF0058CC33 /* Logo.swift in Sources */,
+				92A69F6A220092180058CC33 /* MyView.swift in Sources */,
+				92A69F6E22009D4D0058CC33 /* ExtensionView.swift in Sources */,
 				92A69F53220085840058CC33 /* ViewController.swift in Sources */,
 				92A69F51220085840058CC33 /* AppDelegate.swift in Sources */,
+				92A69F742200ACCA0058CC33 /* MyLabel.swift in Sources */,
+				92A69F6C22009CCD0058CC33 /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,10 @@
 import UIKit
 
 class MyButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    func setup(string: String) {
+        setLayer()
+        setTitle(string, for: UIControl.State.normal)
+        setTitleColor(UIColor.darkGray, for: UIControl.State.normal)
     }
-    */
-
 }

@@ -10,12 +10,55 @@ import UIKit
 
 class MyView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var myMask = UIView()
+    var response = Response.maybe
+    var imageView: UIImageView?
+    var imgLogo: Logo? {
+        didSet {
+            guard let l = imgLogo else { return }
+            response = .maybe
+            if imageView == nil {
+                imageView = UIImageView(frame: bounds)
+                imageView?.image = l.image
+                imageView?.contentMode = .scaleAspectFit
+                addSubview(imageView ?? UIImageView())
+            }
+        }
     }
-    */
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    func setup() {
+        setLayer()
+        isUserInteractionEnabled = true
+        addMask()
+    }
+    
+    func addMask() {
+        myMask = UIView(frame: bounds)
+        myMask.backgroundColor = .clear
+        myMask.alpha = 0.25
+        addSubview(myMask)
+    }
+    
+    func setMaskColor(_ response: Response) {
+        switch response {
+        case .yes: myMask.backgroundColor = .green
+        case .no: myMask.backgroundColor = .red
+        case .maybe: myMask.backgroundColor = .clear
+        }
+        
+        self.response = response
+    }
+    
+    
+    
 }
